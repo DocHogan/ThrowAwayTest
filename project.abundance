@@ -4,13 +4,146 @@
     "x": 0,
     "y": 0,
     "uniqueID": "99f7b1dc-0e2b-4f90-9683-1bba05b81b77",
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "Input (1)",
+            "ioValue": 10,
+            "currentEquation": null
+        }
+    ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": "e1d6feb9-2685-4a87-80cc-a36fa0a5cdbb",
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "5eb8a966-830e-4890-a79d-16dbefb5dbd3",
+                    "currentEquation": null
+                }
+            ],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.4912043301759134,
+            "y": 0.38740920096852305,
+            "uniqueID": "3b2abc33-1dbc-42cb-8dd0-cdf2ee78a33e",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 300,
+                    "currentEquation": null
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 150,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Input",
+            "name": "Input (1)",
+            "x": 0.025384615384615384,
+            "y": 0.5,
+            "uniqueID": "073aa49d-8fd6-40f8-82f7-3da73d5ce1f1",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Constant",
+            "name": "Dim_X",
+            "x": 0.368064952638701,
+            "y": 0.27602905569007263,
+            "uniqueID": "efba1bb8-464e-4a1d-870e-37f4ea291779",
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 300
+        },
+        {
+            "atomType": "Constant",
+            "name": "Dim_Y",
+            "x": 0.36265223274695535,
+            "y": 0.5278450363196125,
+            "uniqueID": "bdb81a55-fe47-4260-9ba3-9b89b8907754",
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 150
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.6075778078484438,
+            "y": 0.4334140435835351,
+            "uniqueID": "5eb8a966-830e-4890-a79d-16dbefb5dbd3",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "3b2abc33-1dbc-42cb-8dd0-cdf2ee78a33e",
+                    "currentEquation": null
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negative."
+        },
+        {
+            "atomType": "Constant",
+            "name": "ExtrudeHeight",
+            "x": 0.5020297699594046,
+            "y": 0.5544794188861986,
+            "uniqueID": "eefedda7-42c9-407f-839a-e73c3d784bd9",
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 10
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "3b2abc33-1dbc-42cb-8dd0-cdf2ee78a33e",
+            "ap2ID": "5eb8a966-830e-4890-a79d-16dbefb5dbd3"
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "x length",
+            "ap1ID": "efba1bb8-464e-4a1d-870e-37f4ea291779",
+            "ap2ID": "3b2abc33-1dbc-42cb-8dd0-cdf2ee78a33e"
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "y length",
+            "ap1ID": "bdb81a55-fe47-4260-9ba3-9b89b8907754",
+            "ap2ID": "3b2abc33-1dbc-42cb-8dd0-cdf2ee78a33e"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap1ID": "5eb8a966-830e-4890-a79d-16dbefb5dbd3",
+            "ap2ID": "e1d6feb9-2685-4a87-80cc-a36fa0a5cdbb"
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "height",
+            "ap1ID": "eefedda7-42c9-407f-839a-e73c3d784bd9",
+            "ap2ID": "5eb8a966-830e-4890-a79d-16dbefb5dbd3"
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
