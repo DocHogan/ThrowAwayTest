@@ -108,6 +108,46 @@
             "ioValues": [],
             "description": "Defines a mathematical constant.",
             "value": 10
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Molecule",
+            "x": 0.6657645466847091,
+            "y": 0.6101694915254238,
+            "uniqueID": "1bb45636-cc01-4d2c-b20e-ef3c944dcd93",
+            "ioValues": [
+                {
+                    "name": "input",
+                    "ioValue": "5eb8a966-830e-4890-a79d-16dbefb5dbd3",
+                    "currentEquation": null
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": "f88ed132-6e85-44ae-a2d4-53ef0e9b7b94",
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "input",
+                    "x": 0.5103518267929634,
+                    "y": 0.6803874092009685,
+                    "uniqueID": "8bfe54dd-8571-4732-84d7-138b1c91d769",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "geometry"
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
     "allConnectors": [
@@ -134,6 +174,12 @@
             "ap2Name": "number or geometry",
             "ap1ID": "5eb8a966-830e-4890-a79d-16dbefb5dbd3",
             "ap2ID": "e1d6feb9-2685-4a87-80cc-a36fa0a5cdbb"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "input",
+            "ap1ID": "5eb8a966-830e-4890-a79d-16dbefb5dbd3",
+            "ap2ID": "1bb45636-cc01-4d2c-b20e-ef3c944dcd93"
         },
         {
             "ap1Name": "number",
